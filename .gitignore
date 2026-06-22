@@ -1,0 +1,32 @@
+# Visual Studio build artifacts & cache
+.vs/
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+
+# Compiled output
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.idb
+*.obj
+*.lib
+*.exp
+*.log
+*.tlog
+*.recipe
+*.ipch
+*.aps
+*.cache
+
+# User-specific project files
+*.vcxproj.user
+*.suo
+*.user
+*.VC.db
+*.VC.opendb
