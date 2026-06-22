@@ -1,5 +1,8 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <cstring>
+#include <string>
+#include <vector>
 
 using namespace std;
 
@@ -503,13 +506,13 @@ public:
         }
 
 
-        char studentNames[numStudents][100];
-        int progress[numStudents];
+        vector<string> studentNames(numStudents);
+        vector<int> progress(numStudents);
 
 
         for (int i = 0; i < numStudents; i++) {
             cout << "Enter the name of student " << i + 1 << ": ";
-            cin.getline(studentNames[i], sizeof(studentNames[i]));
+            getline(cin, studentNames[i]);
 
             cout << "Enter the progress percentage of " << studentNames[i] << " (0-100): ";
             cin >> progress[i];
